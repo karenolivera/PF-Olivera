@@ -1,0 +1,193 @@
+main{
+
+    .section{
+        display: flex;
+        padding: 20px;
+        text-decoration: none;
+        box-sizing: content-box;
+
+        h1{
+            font-family: $fuente2;
+            text-align: center;
+            padding: 20rem;
+        }
+
+        h2{
+            ul{
+                align-items: center;
+                text-align: center;
+
+                li{
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .section2{
+        display: flex;
+        padding: 20px;
+        box-sizing: border-box;
+        text-decoration: none;
+
+        h3{
+            padding: 20px;
+            font-family: $fuente;
+            text-align: center;
+        }
+
+        table{
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            text-decoration: none;
+            
+
+            tr{
+                padding: 20px;
+                td{
+                    font-family: 'EB Garamond', cursive;
+                    text-align: center;
+                }
+            }
+            
+            th{
+                padding: 20px;  
+                font-family: $fuente2;
+
+            }
+
+            img{
+                height: 150px;
+                width: 150px;
+                border-radius: 25%;
+                padding: 10px;
+            }
+        }
+    }
+
+    .section3{
+        padding: 20px;
+        align-items: center;
+        h3{
+            padding: 10px;
+            font-family: $fuente;
+            text-align: center;
+        }
+    }
+
+    .crr{
+        .carousel-inner{
+
+            border-radius: 50px;
+            max-height: 20rem;
+
+            img{
+                width: 60px;
+                border-radius: 40px;
+                text-align: center;
+            }
+        }
+    }
+
+    .accesorios{
+        text-align: center;
+        padding: $tamano2;
+
+        h2{
+            text-align: center;
+            font-family: $fuente2;
+            padding: 20px;
+
+        }
+
+        .galacc{
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items: center;
+
+            .card{
+                width: 150px;
+                margin: 40px 40px;
+                border-radius: 40px;
+                overflow: hidden;
+                height: auto;
+                justify-content: center;
+            }    
+            img{
+                width: 60px;
+                border-radius: 40px;
+                overflow: hidden;
+            }
+
+            .card-tex{
+                text-align: center;
+                font-family: $fuente
+            }
+        }
+    }
+
+    .contacto{
+        display: flex-;
+        text-align: center;
+        padding: 50%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        .form{
+
+            .form-row{
+                padding: 20px;
+                text-align: center;
+            }
+
+            .col-md-4 mb-3{
+                padding: 20px;
+                text-align: center;
+            }
+        }    
+    }
+
+    .nos{
+        text-align: center;
+        padding: $tamano2;
+
+        .nosotros{
+            h2{
+                text-align: center;
+                font-family: $fuente;
+                padding: 1.5rem;
+            }
+            p{
+                text-align: center;
+                font-family: $fuente;
+                padding: 1.5rem;
+            }
+        }
+
+        .mision{
+            text-align: center;
+            padding: $tamano2;
+            h2{
+                font-family: 'Quicksand', sans-serif;
+                text-align: center;
+                padding: 1.5rem;
+            }
+            p{
+                font-family: 'Quicksand', sans-serif;
+                text-align: center;
+                padding: 3px;
+            }
+        }
+    }
+
+    .ubi{
+        h1{
+            font-family: 'PT Serif', serif;
+            text-align: center;
+            padding: 60px;
+        }
+    }
+}
