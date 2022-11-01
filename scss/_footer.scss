@@ -1,5 +1,5 @@
 footer{
-    min-height: 100vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,6 +20,7 @@ footer{
     .redessociales{
         min-width: 700px;
         display: flex;
+        text-align: center;
         justify-content: center;
         a{
             text-decoration: none;
