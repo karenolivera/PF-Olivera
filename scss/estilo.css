@@ -115,6 +115,7 @@ main .section h1 {
 main .section h2 ul {
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 main .section h2 ul li {
   justify-content: center;
