@@ -9,7 +9,7 @@ main{
         h1{
             font-family: $fuente2;
             text-align: center;
-            padding: 20rem;
+            padding: 20px;
         }
 
         h2{
@@ -19,6 +19,7 @@ main{
                 justify-content: center;
 
                 li{
+                    padding: 20rem;
                     justify-content: center;
                     align-items: center;
                     text-align: center;
