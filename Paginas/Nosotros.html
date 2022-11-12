@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="La tienda mas esperada de los amantes de esta linda gatita Kitty">
         <meta name="keywords" content="kitty, Amigos, Acessorios, Ropa, multimedia, gatitta, diversion, ternura, calzado, entretenimiento">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
         <link rel="icon" href="../Image/favicon.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -14,33 +16,33 @@
         <title>Kitty Store/Nosotros</title>
     </head>
 <body>
-    <header>
-
-        <!----LOGO---->
+    <header class="header">
         <div class="logocontenedor">
-            <a href="./index.html"><H1>Kitty</H1></a>
-                <img src="/Image/k1.jpg" alt="kitty">
-            
-        
+            <a href="./index.html"><h1>Kitty</h1></a>
+            <img src="../Image/k1.jpg" alt="kitty">
         </div>
-<!----NAV------>
-        <nav class="navbar">
-            <ul class="menu">
-                <li class="item"><a href="../index.html">Inicio</a></li>
-                <li class="item"><a href="../Paginas/Productos.html">Productos</a>
-                    <ul class="submenu">
-                        <li class="subitem"><a href="./Paginas/Productos.html#hipervinculojugetes">Juguetes</a></li>
-                        <li class="subitem"><a href="./Paginas/Productos.html#hipervinculolibros">Libros</a></li>
-                        <li class="subitem"><a href="./Paginas/Productos.html#hipervinculomultimedia">Multimedia</a></li>
-                    </ul>
+    
+    
+        <nav class="header__nav navbar navbar-expand-lg" id="nav">
+          <div class="container-fluid m-auto">
+            <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse  navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item me-5">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link active" href="../Paginas/Productos.html">Productos</a>
                 </li>
-                    
-                <li class="item"><a href="../Paginas/Nosotros.html">Nosotros</a></li>
-                <li class="item"><a href="../Paginas/Contactos.html">Contactanos</a></li>
-            </ul>
+                <li class="nav-item ">
+                  <a class="nav-link active" href="../Paginas/Contactos.html">Contáctanos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-
-
     </header>
 
 <main>
@@ -84,43 +86,32 @@
 
 
 </main>
-<!---FOOTER------>
+<!---FOOTER----------->
 <footer class="footer">
     <div class="footerpie">
         <h3>Derechos reservados por Kitty Store Ⓡ</h3>
         <h4><a href="#top">Arriba</a></h4>
-        <h4>Siguenos</h4>
-
+        <h4><a href="/Paginas/Nosotros.html">Quienes somos</a></h4>   
     </div>
-    
+  
     <div class="columnasfooter">
-
-        <a href="">Facebook</a>
-        <a href="">Instagram</a>
-        <a href="">Twitter</a>
-        <a href="">TikTok</a>
+        <h4>Siguenos</h4>
+        <h4><a href="/Paginas/Nosotros.html">Quienes somos</a></h4>
+        <h4><a href="/Index.html">Back</a></h4>
     </div>
-
-<!---REDES-SOCIALES-->
-<div class="redessociales">
-  <div>
-      
-      <div class="iconosredes">
-          <a href="#" class="iconoinstagram"> <i class="fa-brands fa-instagram"></i></a>
-      </div>
-      
-      <div class="iconosredes">
-          <a href="#" class="iconowhatsapp"><i class="fa-brands fa-whatsapp"></i></a> 
-      </div>
-      
-      <div class="iconosredes">
-          <a href="#" class="iconofacebook"><i class="fa-brands fa-facebook"></i></a>
-      </div>
-  </div>
-</div>
-
-</footer>
-
+  <!---REDES-SOCIALES-->
+    <div class="redessociales">
+        <img src="../Image/lofa.jpg" alt="facebook">
+        <img src="../Image/loin.png" alt="instagram">
+        <img src="../Image/lowa.png" alt="Whatsapp"> 
+    </div>
+  </footer>
+  
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
     

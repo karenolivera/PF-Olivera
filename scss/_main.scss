@@ -1,30 +1,26 @@
 main{
 
     .section{
-        display: flex;
+        text-align: center;
         padding: 20px;
-        text-decoration: none;
-        box-sizing: content-box;
+        justify-content: center;
 
         h1{
+            padding: 15px;
             font-family: $fuente2;
             text-align: center;
-            padding: 20px;
+            padding: $tamano2;
         }
 
         h2{
-            ul{
+            text-align: center;
+            justify-content: center;
+            li{           
+                justify-content: center;
                 align-items: center;
                 text-align: center;
-                justify-content: center;
-
-                li{
-                   
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                }
             }
+
         }
     }
 
@@ -80,16 +76,23 @@ main{
         }
     }
 
-    .crr{
-        .carousel-inner{
+    .video { 
+        grid-area: video;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-            border-radius: 50px;
-            max-height: 20rem;
+    .crr{
+        padding: 20px;
+        display:block
+        .carousel-inner{
+            max-height: 39rem;
 
             img{
-                width: 100px;
-                border-radius: 40px;
-                text-align: center;
+                width: 50%;
+                height: 50%;
             }
         }
     }
@@ -115,14 +118,12 @@ main{
             .card{
                 width: 150px;
                 margin: 40px 40px;
-                border-radius: 40px;
                 overflow: hidden;
                 height: auto;
                 justify-content: center;
             }    
             img{
-                width: 10px;
-                border-radius: 60px;
+                width: 150px;
                 align-items: center;
             }
 
@@ -132,7 +133,42 @@ main{
             }
         }
     }
+    .Ropa{
+        text-align: center;
+        padding: $tamano2;
 
+        h2{
+            text-align: center;
+            font-family: $fuente2;
+            padding: 20px;
+
+        }
+        .ropa{
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items: center;
+
+            .card{
+                width: 150px;
+                margin: 60px 60px;
+                overflow: hidden;
+                height: auto;
+                justify-content: center;
+            }    
+            img{
+                width: 150px;
+                align-items: center;
+            }
+
+            .card-tex{
+                text-align: center;
+                font-family: $fuente
+            }
+        }
+
+    }
     .contacto{
         display: flex-;
         text-align: center;

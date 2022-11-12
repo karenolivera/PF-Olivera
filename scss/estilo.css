@@ -1,123 +1,82 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-:root {
-  --facebook: #3b5999;
-  --instagram: #e4405f;
-  --twitter: #bd081c;
-  --whatsaap: #4de948;
+html {
+  font-size: 62.5%;
 }
 
 body {
   background: #f05053;
 }
 
-header .logocontenedor {
+.header {
+  width: 100vw;
+  height: 100vh;
+  background: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.header .logocontenedor {
   background-color: #a4168a;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-header .logocontenedor a {
-  text-decoration: none;
-}
-header .logocontenedor h1 {
+.header .logocontenedor h1 {
   color: #ffffff;
-  font-family: playball, cursive;
   font-size: 6rem;
-  display: flex;
+  font-family: playball, cursive;
   text-decoration: none;
   text-align: center;
 }
-header .logocontenedor img {
+.header .logocontenedor img {
   text-align: center;
   height: 150px;
   width: 150px;
   border-radius: 25%;
   padding: 10px;
 }
-header .logocontenedor img:hover {
+.header .logocontenedor img:hover {
   border: #ffffff 5px solid;
 }
-header .navbar {
-  text-align: center;
-  margin-top: 15px;
-  display: flex;
-  width: 100%;
+.header nav {
+  margin-top: 3rem;
+  background-color: #a4168a;
+  opacity: 0.8;
 }
-header .navbar .menu {
-  list-style-type: none;
-  background-color: rgb(245, 168, 206);
-  padding: 0;
-  width: 90%;
-  margin: 20px auto;
-  border-radius: 20px;
-  display: flex;
-  justify-content: "Dancing Script", cursive;
+.header nav li {
+  opacity: 0.6;
 }
-header .navbar .menu .item {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  font-size: 1.1rem;
+.header nav li:hover {
+  opacity: 1;
 }
-header .navbar .menu .item a {
-  color: #000000;
+.header nav a {
   text-decoration: none;
-  font-weight: bolder;
-  display: inline-block;
-  padding: 20px;
-}
-header .navbar .menu .item a:hover {
-  color: #ffffff;
-  background-color: darksalmon;
-  font-weight: unset;
-}
-header .navbar .menu .item .submenu {
-  position: absolute;
-  display: none;
-  font-size: 1rem;
-  background-color: rgb(241, 135, 186);
-  text-align: center;
-  padding: 0;
-  list-style: none;
-  width: 170px;
-  justify-content: center;
-}
-header .navbar .menu .item .submenu:hover {
-  display: flex;
-  flex-direction: column;
-}
-header .navbar .menu .item .submenu .subitem a {
-  display: flex;
-  font-size: 1rem;
-  padding: 19px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  font-size: 2.5rem;
+  color: #000;
 }
 
 main .section {
-  display: flex;
-  padding: 20px;
-  text-decoration: none;
-  box-sizing: content-box;
-}
-main .section h1 {
-  font-family: "EB Garamond", cursive;
   text-align: center;
   padding: 20px;
+  justify-content: center;
 }
-main .section h2 ul {
-  align-items: center;
+main .section h1 {
+  padding: 15px;
+  font-family: "EB Garamond", cursive;
+  text-align: center;
+  padding: 3.5rem;
+}
+main .section h2 {
   text-align: center;
   justify-content: center;
 }
-main .section h2 ul li {
+main .section h2 li {
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -165,12 +124,19 @@ main .section3 h3 {
   font-family: "Dancing Script", cursive;
   text-align: center;
 }
+main .video {
+  grid-area: video;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 main .crr .carousel-inner {
-  border-radius: 50px;
-  max-height: 20rem;
+  max-height: 39rem;
 }
 main .crr .carousel-inner img {
-  width: 100px;
+  width: 100%;
+  height: 100%;
   border-radius: 40px;
   text-align: center;
 }
@@ -256,9 +222,12 @@ main .ubi h1 {
 }
 
 footer {
-  display: flex;
   align-items: center;
   justify-content: center;
+}
+footer .footerpie {
+  justify-content: center;
+  align-items: center;
 }
 footer .footerpie h3 {
   text-align: center;
@@ -270,49 +239,17 @@ footer .footerpie h4 {
 footer .footerpie h4 a {
   text-align: center;
 }
+footer .columnasfooter h4 {
+  text-align: center;
+}
 footer .redessociales {
-  min-width: 700px;
+  height: 20vh;
   display: flex;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
-footer .redessociales a {
-  text-decoration: none;
-  font-size: 28px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  background: #314652;
-  color: #f1f1f1;
-  border-radius: 50%;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-  transition: all 0.4s ease-in-out;
-}
-footer .redessociales a:hover {
-  transform: scale(1.2);
-}
-
-@media (max-width: 768px) {
-  .logocontenedor {
-    display: none;
-  }
-  .menu {
-    display: list-item;
-  }
-  .item {
-    display: none;
-  }
-  .section1 {
-    display: none;
-  }
-  .navbar {
-    display: none;
-  }
-  .section2 {
-    display: none;
-  }
-  .sectioncarrusel {
-    display: none;
-  }
+footer .redessociales img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
 }/*# sourceMappingURL=estilo.css.map */
